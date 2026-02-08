@@ -1,90 +1,51 @@
-# Valentine's Day Animation 💕
+# Valentine's Day Interactive Experience 💕
 
-A special Valentine's Day interactive experience for your fiancé!
+A special Valentine's Day interactive experience with animations and personalized messages.
 
-## Features
+## 🚀 Deploy to Vercel
 
-- 🎭 Animated cutout heads that bounce and move around
-- 💝 Interactive "Will you be my Valentine?" with a funny twist (the "No" button runs away!)
+This project is ready to deploy to Vercel:
+
+1. Go to [Vercel](https://vercel.com)
+2. Click "New Project"
+3. Import this repository: `https://github.com/james-falk/valday.git`
+4. Vercel will automatically detect it as a static site
+5. Click "Deploy"
+
+That's it! Your Valentine's Day experience will be live in seconds.
+
+## 📱 Features
+
+- 🎭 Animated cutout heads that react to clicks
+- 💝 Interactive "Will you be my Valentine?" with fun animations
 - ✨ Beautiful floating hearts background
-- 💌 Personal reasons why you're lucky to have her
-- 💍 Special message about your last Valentine's Day before marriage
-- 🎨 Smooth GSAP animations throughout
+- 🌍 Adventure journey through multiple scenic backgrounds
+- 🚀 Rocket to the moon scene with pets
+- 💌 Handwritten letter-style final message
 - 📱 Fully responsive design
 
-## Setup Instructions
-
-1. **Add Your Photos:**
-   - Create an `images` folder in this directory
-   - Add two cutout images of your heads:
-     - `head1.png` - Your cutout head (transparent background recommended)
-     - `head2.png` - Her cutout head (transparent background recommended)
-   
-   **How to create cutout images:**
-   - Use remove.bg to remove backgrounds from photos
-   - Or use Photoshop/GIMP to cut out your heads
-   - Save as PNG with transparent background
-   - Recommended size: 300x300px or similar
-
-2. **Customize the Messages:**
-   - Edit `script.js` to personalize the "reasons" array with your own sweet messages
-   - You can add more reasons or modify existing ones
-
-3. **Test Locally:**
-   - Simply open `index.html` in your browser
-   - No server needed!
-
-4. **Deploy:**
-   Choose one of these free hosting options:
-   
-   **Option A: Netlify (Recommended - Easiest)**
-   - Go to https://netlify.com
-   - Drag and drop this entire folder
-   - Get an instant live link!
-   
-   **Option B: GitHub Pages**
-   - Create a new GitHub repository
-   - Push this folder
-   - Enable GitHub Pages in settings
-   
-   **Option C: Vercel**
-   - Go to https://vercel.com
-   - Import this folder
-   - Deploy with one click
-
-## File Structure
-
-```
-summer/
-├── index.html          # Main HTML structure
-├── styles.css          # All styling and animations
-├── script.js           # Interactive functionality
-├── README.md           # This file
-└── images/             # Your photos (create this folder)
-    ├── head1.png       # Your cutout
-    └── head2.png       # Her cutout
-```
-
-## Technologies Used
+## 🛠️ Technologies
 
 - Pure HTML/CSS/JavaScript
 - GSAP (GreenSock Animation Platform) for smooth animations
-- No build process or dependencies needed!
+- Google Fonts (Dancing Script & Shadows Into Light) for handwritten text
+- Three.js for enhanced visual effects
 
-## Tips
+## 📝 Local Development
 
-- The "No" button moves away when she hovers over it (funny!)
-- Each time she clicks "No", the "Yes" button gets bigger
-- Confetti explodes when she clicks "Yes"
-- The animation has 3 scenes that flow together
-- Everything is mobile-friendly
+To run locally:
 
-## Customization Ideas
+```bash
+python -m http.server 8000
+```
 
-- Change the gradient colors in `styles.css`
-- Add background music (uncomment audio code if you want)
-- Add more scenes or messages
-- Change the emoji hearts to other symbols
-- Add photos to the final scene
+Then open `http://localhost:8000` in your browser.
 
-Enjoy your Valentine's Day! 💕
+## 🎨 Customization
+
+- Update images in `/images` folder
+- Modify letter content in `index.html` (Scene 5)
+- Adjust animations in `script.js`
+- Change colors and styles in `styles.css`
+
+Made with ❤️ for Summer
