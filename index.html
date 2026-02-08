@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Scene 1: Initial Question -->
+    <div class="scene active" id="scene1">
+        <div class="exploding-head-container">
+            <img src="images/groom.png" alt="Groom Head" class="exploding-head" id="explodingHead">
+        </div>
+        
+        <h1 class="main-title">Will You Be My Valentine?</h1>
+        <p class="subtitle">This year is special...</p>
+        
+        <div class="button-container">
+            <button class="btn btn-yes" id="yesBtn">Yes!</button>
+            <button class="btn btn-no" id="noBtn">No</button>
+        </div>
+    </div>
+
+    <!-- Scene 3: Adventure Journey -->
+    <div class="scene" id="scene3">
+        <div class="adventure-scene">
+            <!-- Scrolling timeline container -->
+            <div class="timeline-container" id="timelineContainer">
+                <div class="adventure-bg beach-bg">
+                    <div class="sky"></div>
+                    <div class="sun"></div>
+                    <div class="ocean">
+                        <div class="wave wave1"></div>
+                        <div class="wave wave2"></div>
+                        <div class="wave wave3"></div>
+                    </div>
+                    <div class="beach-sand"></div>
+                </div>
+                
+                <div class="adventure-bg safari-bg">
+                    <div class="sky safari-sky"></div>
+                    <div class="savanna-ground"></div>
+                    <div class="safari-animal lion">🦁</div>
+                    <div class="safari-animal tiger">🐯</div>
+                </div>
+                
+                <div class="adventure-bg ocean-bg">
+                    <div class="deep-ocean"></div>
+                    <div class="ocean-animal shark">🦈</div>
+                    <div class="ocean-animal whale">🐋</div>
+                    <div class="ocean-animal dolphin1">🐬</div>
+                    <div class="ocean-animal dolphin2">🐬</div>
+                </div>
+                
+                <div class="adventure-bg jungle-bg">
+                    <div class="jungle-sky"></div>
+                    <div class="jungle-ground"></div>
+                    <div class="jungle-tree tree1"></div>
+                    <div class="jungle-tree tree2"></div>
+                    <div class="jungle-tree tree3"></div>
+                </div>
+                
+                <div class="adventure-bg desert-bg">
+                    <div class="desert-sky"></div>
+                    <div class="sun desert-sun"></div>
+                    <div class="desert-ground"></div>
+                    <div class="cactus cactus1">🌵</div>
+                    <div class="cactus cactus2">🌵</div>
+                </div>
+                
+                <div class="adventure-bg mountain-bg">
+                    <div class="mountain-sky"></div>
+                    <div class="mountain peak1"></div>
+                    <div class="mountain peak2"></div>
+                    <div class="mountain peak3"></div>
+                </div>
+                
+                <div class="adventure-bg lake-bg">
+                    <div class="lake-sky"></div>
+                    <div class="lake-water"></div>
+                    <div class="lake-shore"></div>
+                </div>
+            </div>
+            
+            <!-- Stationary characters that stay in place -->
+            <div class="adventure-characters">
+                <div class="floating-character character-left">
+                    <div class="character-head">
+                        <img src="images/groom.png" alt="Groom Head" class="character-face">
+                    </div>
+                    <div class="character-body groom-body"></div>
+                </div>
+                
+                <div class="floating-character character-right">
+                    <div class="character-head">
+                        <img src="images/bride.png" alt="Bride Head" class="character-face">
+                    </div>
+                    <div class="character-body bride-body"></div>
+                </div>
+            </div>
+            
+            <div class="adventure-message">
+                <h2>me and you together on every adventure.</h2>
+            </div>
+        </div>
+        <button class="btn btn-continue" id="continueBtn2">To the Moon!</button>
+    </div>
+
+    <!-- Scene 4: Rocket to the Moon -->
+    <div class="scene" id="scene4">
+        <div class="space-scene">
+            <div class="stars"></div>
+            <div class="moon"></div>
+            
+            <div class="rocket" id="rocket">
+                <div class="rocket-body">
+                    <div class="rocket-window rocket-window-left">
+                        <img src="images/groom.png" alt="Groom Head" class="rocket-face">
+                    </div>
+                    <div class="rocket-window rocket-window-right">
+                        <img src="images/bride.png" alt="Bride Head" class="rocket-face">
+                    </div>
+                    <div class="rocket-tip"></div>
+                </div>
+                <div class="rocket-flames">
+                    <div class="flame flame1"></div>
+                    <div class="flame flame2"></div>
+                    <div class="flame flame3"></div>
+                </div>
+                
+                <!-- Pets being dragged behind -->
+                <div class="pet-chain">
+                    <svg class="chain-rope" viewBox="0 0 10 200">
+                        <path d="M 5 0 Q 3 50, 5 100 T 5 200" stroke="#8B7355" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                    <div class="pet pet-dog">
+                        <img src="images/dog.png" alt="Dog">
+                    </div>
+                </div>
+                
+                <div class="pet-chain pet-chain-2">
+                    <svg class="chain-rope" viewBox="0 0 10 180">
+                        <path d="M 5 0 Q 7 45, 5 90 T 5 180" stroke="#8B7355" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                    <div class="pet pet-cat1">
+                        <img src="images/cat-1.jpg" alt="Cat 1">
+                    </div>
+                </div>
+                
+                <div class="pet-chain pet-chain-3">
+                    <svg class="chain-rope" viewBox="0 0 10 160">
+                        <path d="M 5 0 Q 2 40, 5 80 T 5 160" stroke="#8B7355" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                    <div class="pet pet-cat2">
+                        <img src="images/cat-2.png" alt="Cat 2">
+                    </div>
+                </div>
+                
+                <div class="pet-chain pet-chain-4">
+                    <svg class="chain-rope" viewBox="0 0 10 140">
+                        <path d="M 5 0 Q 8 35, 5 70 T 5 140" stroke="#8B7355" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                    <div class="pet pet-cat3">
+                        <img src="images/cat-3.jpg" alt="Cat 3">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="moon-message" id="moonMessage">
+                <h1 class="moon-title">I Love You to the Moon and Back!</h1>
+                <p class="moon-subtitle">...and back again, infinity times</p>
+            </div>
+        </div>
+        <button class="btn btn-continue" id="continueBtn3">Continue →</button>
+    </div>
+
+    <!-- Scene 5: Final Message -->
+    <div class="scene" id="scene5">
+        <div class="final-image-container">
+            <img src="images/last page.png" alt="Our Memory" class="final-page-image">
+        </div>
+        
+        <div class="letter-container">
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <p class="letter-date">February 14, 2026</p>
+                </div>
+                <div class="letter-content">
+                    <p class="letter-greeting">My Dearest Summer,</p>
+                    
+                    <p class="letter-text">I love you with my whole heart. I just can't believe I'm so lucky to have you around, and I can't believe that this is the last Valentine's Day that we will ever be unmarried.</p>
+                    
+                    <p class="letter-text">I can't wait. You are my everything, my entire world. I am a very, very lucky man.</p>
+                    
+                    <p class="letter-text">I truly can't wait to spend the rest of my life with you and to have many more Valentine's Days as husband and wife.</p>
+                    
+                    <p class="letter-closing">Forever and always,</p>
+                    <p class="letter-signature">James</p>
+                </div>
+            </div>
+            <button class="btn btn-replay" id="replayBtn">Replay</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
