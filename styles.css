@@ -1829,6 +1829,9 @@ body {
         grid-template-rows: auto auto;
         padding: 20px;
         gap: 20px;
+        overflow-y: auto;
+        align-items: start;
+        height: 100vh;
     }
     
     .final-image-container {
@@ -1836,37 +1839,48 @@ body {
         grid-row: 1;
         padding-right: 0;
         margin-bottom: 20px;
-        max-height: 300px;
+        max-height: 40vh;
     }
     
     .final-page-image {
-        max-height: 300px;
+        max-height: 40vh;
     }
     
     .letter-container {
         grid-column: 1;
         grid-row: 2;
+        width: 100%;
+        padding-bottom: 20px;
     }
     
     .letter-paper {
-        padding: 30px 20px;
+        padding: 25px 20px;
         max-width: 100%;
+        max-height: none;
     }
     
     .letter-greeting {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
     }
     
     .letter-text {
-        font-size: 1.1rem;
-        line-height: 1.9;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 15px;
     }
     
     .letter-closing {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin-top: 20px;
     }
     
     .letter-signature {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    
+    .btn-replay {
+        margin-top: 20px;
+        width: 100%;
     }
 }
